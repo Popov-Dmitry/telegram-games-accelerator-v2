@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const Button = ({
   text,
+  size = "lg",
   type,
   disabled,
   onClick,
@@ -16,7 +17,7 @@ const Button = ({
   if (href) {
     return (
       <Link
-        className={joinClassNames(styles.button, className)}
+        className={joinClassNames(styles.button, styles[size], className)}
         href={href}
         target={newTab ? "_blank" : undefined}
       >
@@ -28,7 +29,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={joinClassNames(styles.button, className)}
+      className={joinClassNames(styles.button, styles[size], className)}
       onClick={onClick}
       disabled={disabled}
     >

@@ -8,11 +8,19 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.headerText}>Telegram Gaming Accelerator</div>
-        <IconLink
-          text="Apply"
+        <div className={joinClassNames(styles.centeredFlex, styles.gap10)}>
+          <Image src="/logo.svg" alt="" width={28} height={23} />
+          <div className={styles.headerText}>Telegram Gaming</div>
+        </div>
+        <div className={joinClassNames(styles.centeredFlex, styles.gap32)}>
+          <div className={styles.link}>Tools</div>
+          <div className={styles.link}>Solutions</div>
+          <div className={styles.link}>Partners</div>
+        </div>
+        <Button
+          text="apply"
+          size="sm"
           href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-          icon="./arrow.svg"
         />
       </div>
       <div className={styles.content}>

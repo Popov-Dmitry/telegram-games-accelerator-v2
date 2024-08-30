@@ -6,24 +6,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 54px;
     transition: all .3s;
     height: fit-content;
     text-decoration: none;
     border: none;
     width: fit-content;
-    border-radius: 56px;
-    background-color: #007AFF;
-    font-family: var(--font-sf);
-    font-size: 24px;
+    border-radius: 52px;
+    font-family: var(--font-inter-tight);
     font-weight: 600;
     line-height: 35px;
     letter-spacing: 0.7765481472015381px;
     text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #007AFF -135.9%, #C4FF1E 194.23%);
+}
+
+.lg {
+    padding: 4px 43px;
+    font-size: 22px;
+}
+
+.sm {
+    padding: 0 33px;
+    font-size: 15px;
 }
 
 @media (max-width: 767px) {
     .button {
-        padding: 7px 51px;
+        padding: 3px 40px;
     }
 }
