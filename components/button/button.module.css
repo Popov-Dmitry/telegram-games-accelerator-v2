@@ -1,0 +1,29 @@
+.button {
+    cursor: pointer;
+    z-index: 1;
+    isolation: isolate;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 54px;
+    transition: all .3s;
+    height: fit-content;
+    text-decoration: none;
+    border: none;
+    width: fit-content;
+    border-radius: 56px;
+    background-color: #007AFF;
+    font-family: var(--font-sf);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0.7765481472015381px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .button {
+        padding: 7px 51px;
+    }
+}

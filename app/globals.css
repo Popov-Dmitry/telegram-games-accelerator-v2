@@ -1,0 +1,23 @@
+body {
+  line-height: 1.5;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background-color: #02012d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 18px 160px 18px;
+  font-family: var(--font-inter-tight);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 0px 18px 160px 18px;
+  }
+}
