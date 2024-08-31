@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.header {
+.header, .footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -471,6 +471,21 @@
 
 .bottomCaption br {
   display: none;
+}
+
+.footerWrapper {
+  border-top: 1px solid #FFFFFF26;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerText {
+    font-family: var(--font-inter);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
 }
 
 @media (max-width: 767px) {
