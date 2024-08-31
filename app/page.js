@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </div>
           <div className={joinClassNames(styles.container, styles.flexCol, styles.gap24, styles.mt90)}>
-            <div className={styles.captionGreen}>Lead the next wave of Telegram games</div>
+            <div className={joinClassNames(styles.caption, styles.textGreen)}>Lead the next wave of Telegram games</div>
             <Button
               text="Apply"
               href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
@@ -163,108 +163,133 @@ export default function Home() {
             className={styles.mt66}
           />
         </div>
-
-
-
-        <div className={styles.block}>
-          <div className={styles.title}>What can you expect?</div>
-          <div
-            className={joinClassNames(
-              styles.grid3,
-              styles.rowGap50,
-              styles.mt58
-            )}
-          >
-            <div className={styles.subtitleGreen}>Funding Support</div>
-            <div className={joinClassNames(styles.gridLargeBlock, styles.text)}>
-              Funding and Investment: Receive access to Notcoin and Helika{" "}
-              <span className={styles.textSemibold}>networks of VCs</span> who
-              trust us with deal flows
+        <div className={joinClassNames(styles.block, styles.heroBackground, styles.pb255)}>
+          <Image className={styles.plane} src="/logo.svg" alt="" width={502} height={358} />
+          <div className={styles.container}>
+            <div className={joinClassNames(styles.title, styles.textGreen, styles.textCenter, styles.mt230)}>
+              What can you expect?
             </div>
-            <div className={styles.subtitleGreen}>Go-to-Market</div>
-            <div className={joinClassNames(styles.gridBlock25, styles.text)}>
-              <div>
-                User Acquisition Support:
-                <br />
-                <span className={styles.textSemibold}>
-                  50K attracted users
-                </span>{" "}
-                to the approved game for the test period
+            <div
+              className={joinClassNames(
+                styles.grid3,
+                styles.rowGap64,
+                styles.mt90
+              )}
+            >
+              <div className={styles.subtitle}>Funding Support</div>
+              <div className={styles.text}>
+                <div className={styles.textBold}>TON Ventures and TON Foundation</div>
+                <div className={styles.text}>
+                  Each team accepted into the Accelerator is guaranteed to pitch to TON Ventures. TON Foundation will be
+                  hosting Q&A sessions for our teams.
+                </div>
               </div>
-              <div>
-                Priority Launch on Community platform: Receive access to a{" "}
-                <span className={styles.textSemibold}>
-                  premier launch platform
-                </span>{" "}
-                in the TON ecosystem
-              </div>
-              <div>
-                Notcoin Explore Campaigns: Accelerate user adoption through
-                engagement tools{" "}
-                <span className={styles.textSemibold}>
-                  with over 40 million users
-                </span>
-              </div>
+              <div />
             </div>
-            <div className={joinClassNames(styles.gridBlock25, styles.text)}>
-              <div>
-                Early Incubation:
-                <br />
-                <span className={styles.textSemibold}>
-                  Engage with early adapters
-                </span>{" "}
-                for product testing, feedback, and growth
+            <div className={joinClassNames(styles.divider, styles.mt70)} />
+            <div
+              className={joinClassNames(
+                styles.grid3,
+                styles.rowGap64,
+                styles.mt90
+              )}
+            >
+              <div className={styles.subtitle}>Go-to-Market</div>
+              <div className={styles.gridBlock64}>
+                <div>
+                  <div className={styles.textBold}>User Acquisition Support</div>
+                  <div className={styles.text}>
+                    10K attracted users to the approved game for the test period
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textBold}>Notcoin Explore Campaigns</div>
+                  <div className={styles.text}>
+                    Accelerate user adoption through engagement tools with over 40 million users
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textBold}>Community of Key Opinion Leaders</div>
+                  <div className={styles.text}>
+                    To promote projects within the TON ecosystem
+                  </div>
+                </div>
               </div>
-              <div>
-                Community
-                <br />
-                of{" "}
-                <span className={styles.textSemibold}>
-                  Key Opinion Leaders
-                </span>{" "}
-                to promote projects within the TON ecosystem
-              </div>
-              <div>
-                Gaming and Blockchain Connections: Access to Notcoin and Helika{" "}
-                <span className={styles.textSemibold}>
-                  partners and influencer networks
-                </span>
-              </div>
-            </div>
-            <div className={styles.subtitleGreen}>
-              Technical & Analytical Support
-            </div>
-            <div className={joinClassNames(styles.gridBlock25, styles.text)}>
-              <div>
-                Advanced Analytics:
-                <br />
-                Use an{" "}
-                <span className={styles.textSemibold}>AI-powered suite</span> of
-                products for game studios to improve player engagement,
-                retention, and monetization
+              <div className={styles.gridBlock64}>
+                <div>
+                  <div className={styles.textBold}>Early Incubation</div>
+                  <div className={styles.text}>
+                    Engage with early adapters for product testing, feedback, and growth
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textBold}>Priority Launch on Community Platform</div>
+                  <div className={styles.text}>
+                    Receive access to a premier launch platform in the TON ecosystem
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textBold}>Gaming and Blockchain</div>
+                  <div className={styles.text}>
+                    Connections:Access to Notcoin and Helika partners and influencer networks
+                  </div>
+                </div>
               </div>
             </div>
-            <div className={joinClassNames(styles.gridBlock25, styles.text)}>
-              <div>
-                Advanced Technical Support: Use our expertise and mentorship to
-                help your game leverage the TON blockchain’s capabilities
+            <div className={joinClassNames(styles.divider, styles.mt83)} />
+            <div
+              className={joinClassNames(
+                styles.grid3,
+                styles.rowGap64,
+                styles.mt122
+              )}
+            >
+              <div className={styles.subtitle}>
+                Technical &<br />
+                Analytical<br />
+                Support
               </div>
-            </div>
-            <div className={styles.subtitleGreen}>
-              Regulatory and Legal Assistance
-            </div>
-            <div className={styles.text}>
-              Access to sources for assistance with intellectual property,
-              contracts, and other legal matters
+              <div className={styles.gridBlock64}>
+                <div>
+                  <div className={styles.textBold}>Advanced Analytics</div>
+                  <div className={styles.text}>
+                    Use an AI-powered suite of products for game studios to improve player engagement, retention, and monetization
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textBold}>Workshops</div>
+                  <div className={styles.text}>
+                    Join specialized workshops including LiveOps, Growth, and Analytics
+                  </div>
+                </div>
+              </div>
+              <div className={styles.gridBlock64}>
+                <div>
+                  <div className={styles.textBold}>
+                    6 Months of Full Access to Helika Solution Suite
+                  </div>
+                  <div className={styles.text}>
+                    Including Helika Game Management, Product Analytics, and UA Tooling
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textBold}>Advanced Technical Support</div>
+                  <div className={styles.text}>
+                    Use our expertise and mentorship to help your game leverage the TON blockchain’s capabilities
+                  </div>
+                </div>
+              </div>
             </div>
             <Button
               text="Apply"
               href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
               newTab
-              className={styles.mAuto}
+              className={joinClassNames(styles.mt144, styles.mxAuto)}
             />
           </div>
+
         </div>
+
         <div className={styles.block}>
           <div className={styles.title}>Who we are looking for?</div>
           <div className={joinClassNames(styles.grid3, styles.mt50)}>
@@ -378,19 +403,19 @@ export default function Home() {
               <div>
                 <div
                   className={joinClassNames(
-                    styles.subtitle,
-                    styles.mobileTextCenter
-                  )}
-                >
-                  Helika
-                </div>
-                <div
-                  className={joinClassNames(
-                    styles.text,
-                    styles.mobileTextCenter,
-                    styles.mt10
-                  )}
-                >
+                      styles.subtitle,
+                      styles.mobileTextCenter
+                    )}
+                  >
+                    Helika
+                  </div>
+                  <div
+                    className={joinClassNames(
+                      styles.text,
+                      styles.mobileTextCenter,
+                      styles.mt10
+                    )}
+                  >
                   <span
                     className={joinClassNames(
                       styles.textGreen,
@@ -399,61 +424,61 @@ export default function Home() {
                   >
                     15+
                   </span>{" "}
-                  Years in Web3,
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
+                    Years in Web3,
+                    <span
+                      className={joinClassNames(
+                        styles.textGreen,
+                        styles.textBold
+                      )}
+                    >
                     {" "}
-                    25
+                      25
                   </span>
-                  + Years in Gaming,{" "}
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
+                    + Years in Gaming,{" "}
+                    <span
+                      className={joinClassNames(
+                        styles.textGreen,
+                        styles.textBold
+                      )}
+                    >
                     10+
                   </span>{" "}
-                  Years in Venture Funding,{" "}
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
+                    Years in Venture Funding,{" "}
+                    <span
+                      className={joinClassNames(
+                        styles.textGreen,
+                        styles.textBold
+                      )}
+                    >
                     250+
                   </span>{" "}
-                  Global Industry Connections
+                    Global Industry Connections
+                  </div>
                 </div>
               </div>
             </div>
+            <Button
+              text="Apply"
+              href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
+              newTab
+              className={styles.mt50}
+            />
           </div>
-          <Button
-            text="Apply"
-            href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-            newTab
-            className={styles.mt50}
-          />
         </div>
-      </div>
-      <div className={styles.footer}>
-        <div className={styles.footerCaption}>
-          Lead the next wave
-          <br /> of Telegram games
+        <div className={styles.footer}>
+          <div className={styles.footerCaption}>
+            Lead the next wave
+            <br /> of Telegram games
+          </div>
+          <div className={styles.footerCenter}>
+            <IconLink
+              text="Apply"
+              size="lg"
+              href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
+              icon="./arrow.svg"
+            />
+          </div>
         </div>
-        <div className={styles.footerCenter}>
-          <IconLink
-            text="Apply"
-            size="lg"
-            href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-            icon="./arrow.svg"
-          />
-        </div>
-      </div>
     </main>
-  );
+);
 }

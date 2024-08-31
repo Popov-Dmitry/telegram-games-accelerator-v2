@@ -44,6 +44,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .notcoin {
@@ -76,7 +77,7 @@
   text-align: left;
 }
 
-.subtitle, .subtitleGreen {
+.subtitle {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -84,7 +85,7 @@
   z-index: 2;
 }
 
-.text, .textSemibold, .textBold, .textGreen, .firstGridBlock {
+.text, .textSemibold, .textBold, .firstGridBlock {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -108,10 +109,6 @@
   font-weight: 700;
 }
 
-.textGreen, .subtitleGreen {
-  color: #C4FF1E;
-}
-
 .caption, .captionGreen {
   font-family: var(--font-inter-tight);
   font-size: 22px;
@@ -119,7 +116,7 @@
   line-height: 26px;
 }
 
-.captionGreen {
+.textGreen {
   background: radial-gradient(391.22% 251.68% at 137.8% 49.99%, #C4FF1E 0%, #007AFF 59.22%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -147,6 +144,12 @@
   transform: translateY(-50%);
 }
 
+.plane {
+  position: absolute;
+  top: 0;
+  right: -115px;
+}
+
 .divider {
   width: 100%;
   border: 1px solid #FFFFFF80
@@ -155,6 +158,10 @@
 .pb125 {
   padding-bottom: 125px;
   width: 100%;
+}
+
+.pb255 {
+  padding-bottom: 255px;
 }
 
 .mt10 {
@@ -189,8 +196,16 @@
   margin-top: 66px;
 }
 
+.mt70 {
+  margin-top: 70px;
+}
+
 .mt74 {
   margin-top: 74px;
+}
+
+.mt83 {
+
 }
 
 .mt90 {
@@ -201,12 +216,29 @@
   margin-top: 110px;
 }
 
+.mt122 {
+  margin-top: 122px;
+}
+
+.mt144 {
+  margin-top: 140px;
+}
+
+.mt230 {
+  margin-top: 230px;
+}
+
 .mt240 {
   margin-top: 240px;
 }
 
 .mx54 {
   margin: 0 54px;
+}
+
+.mxAuto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mAuto {
@@ -288,7 +320,7 @@
   max-width: 235px;
 }
 
-.gridBlock18, .gridBlock25 {
+.gridBlock18, .gridBlock25, .gridBlock64 {
   display: flex;
   flex-direction: column;
 }
@@ -308,6 +340,10 @@
 
 .gridBlock56 {
   gap: 56px;
+}
+
+.gridBlock64 {
+  gap: 64px;
 }
 
 .gridLargeBlock {
@@ -438,12 +474,12 @@
     line-height: 27px;
   }
 
-  .subtitle, .subtitleGreen {
+  .subtitle {
     font-size: 36px;
     line-height: 43px;
   }
 
-  .text, .textGreen {
+  .text {
     font-size: 18px;
     line-height: 21px;
   }
