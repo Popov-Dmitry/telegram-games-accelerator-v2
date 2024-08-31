@@ -55,115 +55,117 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={styles.block}>
-          <div className={styles.title}>Innovate tools</div>
-          <div
-            className={joinClassNames(
-              styles.grid2,
-              styles.rowGap64,
-              styles.mt38
-            )}
-          >
-            <div className={styles.gridBlock18}>
-              <div className={styles.subtitle}>Community</div>
-              <div className={styles.text}>
-                Telegram native toolset for easy access to a 900M active
-                audience.
-                <br />
-                500+ user-acquisition campaigns.
-              </div>
-              <div className={styles.bgIcon1}>
-                <Image src="./icon1.svg" alt="" fill />
+        <div className={joinClassNames(styles.block, styles.pixelBackground, styles.mt110)}>
+          <div className={joinClassNames(styles.container, styles.grid3, styles.colGap48, styles.centeredGridBlock)}>
+            <div>
+              <Image src="/telegram.svg" alt="" width={36} height={36} />
+              <div className={styles.caption}>
+                Help you scale your<br />
+                unique game<br />
+                to Telegram’s massive<br />
+                audiences
               </div>
             </div>
-            <div className={styles.gridBlock18}>
-              <div className={styles.subtitle}>Early</div>
-              <div className={styles.text}>
-                A tool for win-win collaborations between projects and their
-                early adopters
-              </div>
-              <div className={styles.bgIcon2}>
-                <Image src="./icon2.svg" alt="" fill />
+            <div>
+              <Image src="/gear-outline.svg" alt="" width={36} height={36} />
+              <div className={styles.caption}>
+                Technical and<br />
+                analytical expertise
               </div>
             </div>
-            <div className={styles.gridBlock18}>
-              <div className={styles.subtitle}>Tonstarter</div>
-              <div className={styles.text}>
-                The launchpad platform designed to support projects on The Open
-                Network (TON)
-              </div>
-              <div className={styles.bgIcon3}>
-                <Image src="./icon3.svg" alt="" fill />
-              </div>
-            </div>
-            <div className={styles.gridBlock18}>
-              <div className={styles.subtitle}>TokenTable</div>
-              <div className={styles.text}>
-                An on-chain token management platform
-                <br />
-                that allows to conduct airdrops, vesting
-                <br />
-                and unlocking
-              </div>
-              <div className={styles.bgIcon4}>
-                <Image src="./icon4.svg" alt="" fill />
+            <div>
+              <Image src="/megaphone.svg" alt="" width={36} height={36} />
+              <div className={styles.caption}>
+                Providing go-to-market<br />
+                strategy, user<br />
+                acquisition solutions
               </div>
             </div>
           </div>
-          <div
-            className={joinClassNames(
-              styles.grid2,
-              styles.rowGap30,
-              styles.mt55,
-              styles.relative
-            )}
-          >
-            <div>
-              <div className={styles.subtitle}>Helika Solution Suite</div>
-            </div>
-            <div className={styles.mobileNone} />
-            <div className={styles.bgIcon5}>
-              <Image src="./icon5.svg" alt="" fill />
-            </div>
-            <div>
-              <div className={styles.textSemibold}>Game Management</div>
-              <div className={styles.text}>
-                In-game analytics covering users, engagement, retention,
-                revenue, segmentation, and more.
+          <div className={joinClassNames(styles.container, styles.blueBox, styles.mt240)}>
+            <div className={styles.mx54}>
+              <div className={joinClassNames(styles.title, styles.textCenter)}>Innovate tools</div>
+              <div className={joinClassNames(styles.grid3, styles.gridBlock56, styles.mt74)}>
+                <div>
+                  <div className={styles.subtitle}>Community</div>
+                  <div className={joinClassNames(styles.text, styles.mt18)}>
+                    Telegram native toolset for easy
+                    access to a 900M active audience.
+                    500+ user-acquisition campaigns.
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.subtitle}>Tonstarter</div>
+                  <div className={joinClassNames(styles.text, styles.mt18)}>
+                    The launchpad platform designed to support projects on The Open Network (TON)
+                  </div>
+                </div>
+                <div />
+                <div>
+                  <div className={styles.subtitle}>Early</div>
+                  <div className={joinClassNames(styles.text, styles.mt18)}>
+                    A tool for win-win collaborations between projects and their early adopters
+                  </div>
+                  <div className={styles.bgIcon2}>
+                    <Image src="./icon2.svg" alt="" fill />
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.subtitle}>TokenTable</div>
+                  <div className={joinClassNames(styles.text, styles.mt18)}>
+                    An on-chain token management platform that allows to conduct token sales, airdrops, vesting and
+                    unlocking
+                  </div>
+                </div>
+                <div />
               </div>
             </div>
-            <div>
-              <div className={styles.textSemibold}>
-                Marketing & Growth Analytics
-              </div>
-              <div className={styles.text}>
-                Grow your game by leveraging Helika{"'"}s campaing analytics and
-                Deep Funnel Attribution.
+            <div className={joinClassNames(styles.divider, styles.mt90)} />
+            <div className={styles.mx54}>
+              <div className={joinClassNames(styles.mt90, styles.subtitle)}>Helika</div>
+              <div className={joinClassNames(styles.grid3, styles.gridBlock37, styles.mt20)}>
+                <div>
+                  <div className={styles.textSemibold}>Game Management</div>
+                  <div className={styles.text}>
+                    In-game analytics, LiveOps, A/B Testing, and Discord Support Portal
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textSemibold}>
+                    Marketing & Growth Analytics
+                  </div>
+                  <div className={styles.text}>
+                    Everything you need to grow your game, including Deep Funnel
+                  </div>
+                </div>
+                <div />
+                <div>
+                  <div className={styles.textSemibold}>On-Chain Analytics</div>
+                  <div className={styles.text}>
+                    Track everything on-chain, including your on-chain token and NFT
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.textSemibold}>AI Optimize Engine</div>
+                  <div className={styles.text}>
+                    Programmatically optimize your game
+                  </div>
+                </div>
+                <div />
               </div>
             </div>
-            <div>
-              <div className={styles.textSemibold}>On-Chain Analytics</div>
-              <div className={styles.text}>
-                Gain a comprehensive understanding of NFTs and tokens with
-                insights about your holders, trading behavior, wallet analysis
-                and trends.
-              </div>
-            </div>
-            <div>
-              <div className={styles.textSemibold}>Engage</div>
-              <div className={styles.text}>
-                Launch and customize Play-to-Airdrop campaigns, quests, and
-                referral systems.
-              </div>
-            </div>
+            <Image className={styles.pixels1} src="/pixels1.png" alt="" width={414} height={546} />
           </div>
           <Button
             text="Apply"
             href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
             newTab
-            className={styles.mt50}
+            className={styles.mt66}
           />
         </div>
+
+
+
         <div className={styles.block}>
           <div className={styles.title}>What can you expect?</div>
           <div

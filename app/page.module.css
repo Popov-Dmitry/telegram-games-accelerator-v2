@@ -43,6 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .notcoin {
@@ -84,11 +85,19 @@
 }
 
 .text, .textSemibold, .textBold, .textGreen, .firstGridBlock {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 19px;
   text-align: left;
   z-index: 2;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.text {
+  color: #C7C7C7;
 }
 
 .textSemibold, .firstGridBlock {
@@ -120,6 +129,29 @@
   background: url("/hero-background.png") repeat-x 0 bottom;
 }
 
+.pixelBackground {
+  background: url("/pixel-background.png") no-repeat 0 35px;
+}
+
+.blueBox {
+  background: linear-gradient(229.54deg, #15E8FF -10.86%, #21AAF2 8.93%, #2D72E6 29.19%, #3546DD 47.99%, #3C26D7 64.74%, #4013D2 78.8%, #410CD1 88.49%);
+  border-radius: 10px;
+  padding: 72px 38px 117px 38px;
+  position: relative;
+}
+
+.pixels1 {
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  transform: translateY(-50%);
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid #FFFFFF80
+}
+
 .pb125 {
   padding-bottom: 125px;
   width: 100%;
@@ -127,6 +159,10 @@
 
 .mt10 {
   margin-top: 10px;
+}
+
+.mt18 {
+  margin-top: 18px;
 }
 
 .mt20 {
@@ -149,12 +185,28 @@
   margin-top: 58px;
 }
 
+.mt66 {
+  margin-top: 66px;
+}
+
 .mt74 {
   margin-top: 74px;
 }
 
 .mt90 {
   margin-top: 90px;
+}
+
+.mt110 {
+  margin-top: 110px;
+}
+
+.mt240 {
+  margin-top: 240px;
+}
+
+.mx54 {
+  margin: 0 54px;
 }
 
 .mAuto {
@@ -176,6 +228,10 @@
   grid-row-gap: 50px;
 }
 
+.colGap48 {
+  grid-column-gap: 48px;
+}
+
 .colGap100 {
   grid-column-gap: 100px;
 }
@@ -189,6 +245,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   width: 100%;
+}
+
+.centeredGridBlock {
+  justify-items: center;
 }
 
 .centeredFlex {
@@ -240,6 +300,14 @@
 
 .gridBlock25 {
   gap: 25px;
+}
+
+.gridBlock37 {
+  gap: 37px;
+}
+
+.gridBlock56 {
+  gap: 56px;
 }
 
 .gridLargeBlock {
