@@ -6,8 +6,8 @@ import { joinClassNames } from "@/utils/join-class-names";
 
 export default function Home() {
   return (
-    <main className={styles.container}>
-      <div className={styles.header}>
+    <main>
+      <div className={joinClassNames(styles.container, styles.header)}>
         <div className={joinClassNames(styles.centeredFlex, styles.gap10)}>
           <Image src="/logo.svg" alt="" width={28} height={23} />
           <div className={styles.headerText}>Telegram Gaming</div>
@@ -24,39 +24,35 @@ export default function Home() {
         />
       </div>
       <div className={styles.content}>
-        <div className={styles.block}>
-          <div className={styles.name}>Telegram Gaming Accelerator</div>
-          <div className={styles.caption}>
-            Lead the next wave of Telegram games
+        <div className={joinClassNames(styles.block, styles.pb125, styles.heroBackground)}>
+          <div className={joinClassNames(styles.container, styles.flexCol, styles.gap12)}>
+            <div className={styles.centeredFlex}>
+              <div className={styles.centeredFlex}>
+                <Image src="/notcoin-logo.svg" alt="" width={28} height={28} />
+                <div className={styles.notcoin}>Notcoin</div>
+              </div>
+              <Image src="/helika-logo.svg" alt="" width={117} height={24} />
+            </div>
+            <div className={styles.centeredFlex}>
+              <div className={styles.caption}>In Partnership with</div>
+              <Image src="/ton-ventures.png" alt="" width={187} height={28} />
+            </div>
           </div>
-          <Button
-            text="Apply"
-            href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-            newTab
-            className={styles.mt20}
-          />
-          <div className={joinClassNames(styles.grid3, styles.mt74)}>
-            <div className={styles.firstGridBlock}>
-              Scale your unique game to Telegram’s massive{" "}
-              <span className={styles.centeredFlex}>
-                audiences
-                <Image src="./telegram.svg" alt="" width={20} height={20} />
-              </span>
+          <div className={joinClassNames(styles.container, styles.centeredFlex, styles.gap12, styles.mt74)}>
+            <Image src="/logo.svg" alt="" width={100} height={78} />
+            <div>
+              <div className={styles.telegramGaming}>Telegram Gaming</div>
+              <div className={styles.accelerator}>ACCELERATOR</div>
             </div>
-            <div className={styles.firstGridBlock}>
-              Find a go-to-market strategy & user acquisition{" "}
-              <span className={styles.centeredFlex}>
-                solution
-                <Image src="./megaphone.svg" alt="" width={21} height={21} />
-              </span>
-            </div>
-            <div className={styles.firstGridBlock}>
-              Get advanced technical support & analytical{" "}
-              <span className={styles.centeredFlex}>
-                expertise
-                <Image src="./gear-outline.svg" alt="" width={24} height={24} />
-              </span>
-            </div>
+          </div>
+          <div className={joinClassNames(styles.container, styles.flexCol, styles.gap24, styles.mt90)}>
+            <div className={styles.captionGreen}>Lead the next wave of Telegram games</div>
+            <Button
+              text="Apply"
+              href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
+              newTab
+              className={styles.mt20}
+            />
           </div>
         </div>
         <div className={styles.block}>
