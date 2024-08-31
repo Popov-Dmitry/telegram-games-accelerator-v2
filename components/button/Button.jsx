@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const Button = ({
   text,
+  color = "green",
   size = "lg",
   type,
   disabled,
@@ -17,11 +18,13 @@ const Button = ({
   if (href) {
     return (
       <Link
-        className={joinClassNames(styles.button, styles[size], className)}
+        className={joinClassNames(styles.button, styles[color], styles[size], className)}
         href={href}
         target={newTab ? "_blank" : undefined}
       >
-        {text}
+        <div className={styles[`${color}Text`]}>
+          {text}
+        </div>
       </Link>
     );
   }
@@ -33,7 +36,9 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
     >
-      {text}
+      <div className={styles[`${color}Text`]}>
+        {text}
+      </div>
     </button>
   );
 };

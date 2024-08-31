@@ -82,7 +82,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={joinClassNames(styles.container, styles.blueBox, styles.mt240)}>
+          <div className={joinClassNames(styles.container, styles.blueBox1, styles.mt240)}>
             <div className={styles.mx54}>
               <div className={joinClassNames(styles.title, styles.textCenter)}>Innovate tools</div>
               <div className={joinClassNames(styles.grid3, styles.gridBlock56, styles.mt74)}>
@@ -253,7 +253,8 @@ export default function Home() {
                 <div>
                   <div className={styles.textBold}>Advanced Analytics</div>
                   <div className={styles.text}>
-                    Use an AI-powered suite of products for game studios to improve player engagement, retention, and monetization
+                    Use an AI-powered suite of products for game studios to improve player engagement, retention, and
+                    monetization
                   </div>
                 </div>
                 <div>
@@ -287,48 +288,45 @@ export default function Home() {
               className={joinClassNames(styles.mt144, styles.mxAuto)}
             />
           </div>
-
         </div>
-
-        <div className={styles.block}>
+        <div className={joinClassNames(styles.container, styles.block, styles.blueBox2)}>
           <div className={styles.title}>Who we are looking for?</div>
-          <div className={joinClassNames(styles.grid3, styles.mt50)}>
-            <div className={styles.gridBlock25}>
+          <div className={joinClassNames(styles.grid3, styles.gap50, styles.mt50)}>
+            <div className={styles.gridBlock38}>
               <Image src="./fire.svg" alt="" width={63} height={63} />
               <div>
-                <div className={styles.subtitle}>Web3 Games</div>
-                <div className={joinClassNames(styles.text, styles.mt10)}>
-                  Highly intelligent Web3 gaming projects building on TON and
-                  accelerating the Telegram mini apps ecosystem
+                <div className={styles.textXl}>
+                  Highly intelligent Web3 gaming projects building on TON and accelerating the Telegram mini apps
+                  ecosystem
                 </div>
               </div>
             </div>
-            <div className={styles.gridBlock25}>
+            <div className={styles.gridBlock38}>
               <Image src="./stars.svg" alt="" width={63} height={63} />
               <div>
-                <div className={styles.subtitle}>Initial Traction</div>
-                <div className={joinClassNames(styles.text, styles.mt10)}>
+                <div className={styles.textXl}>
                   Games with initial traction and planned TGE would be preferred
                 </div>
               </div>
             </div>
-            <div className={styles.gridBlock25}>
+            <div className={styles.gridBlock38}>
               <Image src="./calendar.svg" alt="" width={60} height={60} />
               <div>
-                <div className={styles.subtitle}>TGE: Q4 2024</div>
-                <div className={joinClassNames(styles.text, styles.mt10)}>
-                  TGE – Q4 2024; cliff by the end of 2024; vesting for TGA
-                  founders maximum 6 months
+                <div className={styles.textXl}>TGE – Q4 2024;</div>
+                <div className={styles.textXl}>
+                  cliff by the end of 2024; vesting for TGA founders maximum 6 months
                 </div>
               </div>
             </div>
           </div>
           <Button
             text="Apply"
+            color="white"
             href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
             newTab
-            className={styles.mt38}
+            className={styles.mt60}
           />
+          <Image className={styles.pixels2} src="/pixels2.png" alt="" width={283} height={472} />
         </div>
         <div className={styles.block}>
           <div className={styles.title}>Initial partners</div>
@@ -403,19 +401,19 @@ export default function Home() {
               <div>
                 <div
                   className={joinClassNames(
-                      styles.subtitle,
-                      styles.mobileTextCenter
-                    )}
-                  >
-                    Helika
-                  </div>
-                  <div
-                    className={joinClassNames(
-                      styles.text,
-                      styles.mobileTextCenter,
-                      styles.mt10
-                    )}
-                  >
+                    styles.subtitle,
+                    styles.mobileTextCenter
+                  )}
+                >
+                  Helika
+                </div>
+                <div
+                  className={joinClassNames(
+                    styles.text,
+                    styles.mobileTextCenter,
+                    styles.mt10
+                  )}
+                >
                   <span
                     className={joinClassNames(
                       styles.textGreen,
@@ -424,61 +422,61 @@ export default function Home() {
                   >
                     15+
                   </span>{" "}
-                    Years in Web3,
-                    <span
-                      className={joinClassNames(
-                        styles.textGreen,
-                        styles.textBold
-                      )}
-                    >
+                  Years in Web3,
+                  <span
+                    className={joinClassNames(
+                      styles.textGreen,
+                      styles.textBold
+                    )}
+                  >
                     {" "}
-                      25
+                    25
                   </span>
-                    + Years in Gaming,{" "}
-                    <span
-                      className={joinClassNames(
-                        styles.textGreen,
-                        styles.textBold
-                      )}
-                    >
+                  + Years in Gaming,{" "}
+                  <span
+                    className={joinClassNames(
+                      styles.textGreen,
+                      styles.textBold
+                    )}
+                  >
                     10+
                   </span>{" "}
-                    Years in Venture Funding,{" "}
-                    <span
-                      className={joinClassNames(
-                        styles.textGreen,
-                        styles.textBold
-                      )}
-                    >
+                  Years in Venture Funding,{" "}
+                  <span
+                    className={joinClassNames(
+                      styles.textGreen,
+                      styles.textBold
+                    )}
+                  >
                     250+
                   </span>{" "}
-                    Global Industry Connections
-                  </div>
+                  Global Industry Connections
                 </div>
               </div>
             </div>
-            <Button
-              text="Apply"
-              href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-              newTab
-              className={styles.mt50}
-            />
           </div>
+          <Button
+            text="Apply"
+            href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
+            newTab
+            className={styles.mt50}
+          />
         </div>
-        <div className={styles.footer}>
-          <div className={styles.footerCaption}>
-            Lead the next wave
-            <br /> of Telegram games
-          </div>
-          <div className={styles.footerCenter}>
-            <IconLink
-              text="Apply"
-              size="lg"
-              href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-              icon="./arrow.svg"
-            />
-          </div>
+      </div>
+      <div className={styles.footer}>
+        <div className={styles.footerCaption}>
+          Lead the next wave
+          <br /> of Telegram games
         </div>
+        <div className={styles.footerCenter}>
+          <IconLink
+            text="Apply"
+            size="lg"
+            href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
+            icon="./arrow.svg"
+          />
+        </div>
+      </div>
     </main>
-);
+  );
 }

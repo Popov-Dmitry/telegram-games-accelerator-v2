@@ -18,7 +18,6 @@
     letter-spacing: 0.7765481472015381px;
     text-align: center;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #007AFF -135.9%, #C4FF1E 194.23%);
 }
 
 .lg {
@@ -29,6 +28,20 @@
 .sm {
     padding: 0 33px;
     font-size: 15px;
+}
+
+.green {
+    background: linear-gradient(90deg, #007AFF -135.9%, #C4FF1E 194.23%);
+}
+
+.white {
+    background: white;
+}
+
+.whiteText {
+    background: radial-gradient(391.22% 251.68% at 137.8% 49.99%, #C4FF1E 0%, #007AFF 59.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 767px) {

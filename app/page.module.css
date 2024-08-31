@@ -109,6 +109,13 @@
   font-weight: 700;
 }
 
+.textXl {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
 .caption, .captionGreen {
   font-family: var(--font-inter-tight);
   font-size: 22px;
@@ -130,11 +137,18 @@
   background: url("/pixel-background.png") no-repeat 0 35px;
 }
 
-.blueBox {
+.blueBox1, .blueBox2 {
   background: linear-gradient(229.54deg, #15E8FF -10.86%, #21AAF2 8.93%, #2D72E6 29.19%, #3546DD 47.99%, #3C26D7 64.74%, #4013D2 78.8%, #410CD1 88.49%);
   border-radius: 10px;
-  padding: 72px 38px 117px 38px;
   position: relative;
+}
+
+.blueBox1 {
+  padding: 72px 38px 117px 38px;
+}
+
+.blueBox2 {
+  padding: 78px 84px 81px 84px;
 }
 
 .pixels1 {
@@ -142,6 +156,12 @@
   top: 50%;
   right: 17px;
   transform: translateY(-50%);
+}
+
+.pixels2 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .plane {
@@ -192,6 +212,10 @@
   margin-top: 58px;
 }
 
+.mt60 {
+  margin-top: 60px;
+}
+
 .mt66 {
   margin-top: 66px;
 }
@@ -205,7 +229,7 @@
 }
 
 .mt83 {
-
+  margin-top: 83px;
 }
 
 .mt90 {
@@ -316,11 +340,15 @@
   gap: 32px;
 }
 
+.gap50 {
+  gap: 50px;
+}
+
 .firstGridBlock {
   max-width: 235px;
 }
 
-.gridBlock18, .gridBlock25, .gridBlock64 {
+.gridBlock18, .gridBlock25, .gridBlock38, .gridBlock64 {
   display: flex;
   flex-direction: column;
 }
@@ -336,6 +364,10 @@
 
 .gridBlock37 {
   gap: 37px;
+}
+
+.gridBlock38 {
+  gap: 38px;
 }
 
 .gridBlock56 {
