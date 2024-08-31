@@ -116,6 +116,17 @@
   text-align: left;
 }
 
+.textXXL, .textXXLBold {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+}
+
+.textXXLBold {
+  font-weight: 700;
+}
+
 .caption, .captionGreen {
   font-family: var(--font-inter-tight);
   font-size: 22px;
@@ -200,6 +211,10 @@
   margin-top: 38px;
 }
 
+.mt40 {
+  margin-top: 40px;
+}
+
 .mt50 {
   margin-top: 50px;
 }
@@ -234,6 +249,10 @@
 
 .mt90 {
   margin-top: 90px;
+}
+
+.mt100 {
+  margin-top: 100px;
 }
 
 .mt110 {
@@ -282,6 +301,10 @@
 
 .rowGap50 {
   grid-row-gap: 50px;
+}
+
+.colGap20 {
+  grid-column-gap: 20px;
 }
 
 .colGap48 {
@@ -431,7 +454,7 @@
   position: relative;
 }
 
-.footer {
+.bottom {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -439,15 +462,14 @@
   width: 100%;
 }
 
-.footerCaption {
+.bottomCaption {
   font-size: 55px;
   font-weight: 600;
   line-height: 66px;
   text-align: left;
-  color: #C4FF1E;
 }
 
-.footerCaption br {
+.bottomCaption br {
   display: none;
 }
 
@@ -589,20 +611,20 @@
     height: 154px;
   }
 
-  .footer {
+  .bottom {
     align-items: center;
   }
 
-  .footerCaption {
+  .bottomCaption {
     font-size: 40px;
     line-height: 48px;
   }
 
-  .footerCaption br {
+  .bottomCaption br {
     display: initial;
   }
 
-  .footerCenter {
+  .bottomCenter {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;

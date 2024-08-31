@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./icon-link.module.css";
 import React from "react";
 import Link from "next/link";
@@ -7,12 +5,12 @@ import Image from "next/image";
 import { useWindowSize } from "@react-hook/window-size";
 
 const IconLink = ({ href, text, size = "sm", icon }) => {
-  const [ deviceWidth ] =  useWindowSize();
-
-  console.log(deviceWidth, size)
-
   return (
-    <Link href={href} className={size === "sm" ? styles.small : styles.large}>
+    <Link
+      href={href}
+      target="_blank"
+      className={size === "sm" ? styles.small : styles.large}
+    >
       <div>{text}</div>
       {size !== "sm" && (
         <div className={styles.largeIconVisible}>

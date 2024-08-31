@@ -328,129 +328,58 @@ export default function Home() {
           />
           <Image className={styles.pixels2} src="/pixels2.png" alt="" width={283} height={472} />
         </div>
-        <div className={styles.block}>
-          <div className={styles.title}>Initial partners</div>
+        <div className={joinClassNames(styles.container, styles.block, styles.mt110)}>
+          <div className={joinClassNames(styles.title, styles.textGreen)}>Initial partners</div>
           <div
             className={joinClassNames(
               styles.grid2,
-              styles.colGap100,
-              styles.mt58
+              styles.colGap20,
+              styles.centeredGridBlock,
+              styles.mt100
             )}
           >
-            <div
-              className={joinClassNames(
-                styles.subtitle,
-                styles.mobileTextCenter
-              )}
-            >
+            <div>
               <Image src="./ton-icon.svg" alt="" width={147} height={134} />
-              <div>
-                <div
-                  className={joinClassNames(
-                    styles.subtitle,
-                    styles.mobileTextCenter
-                  )}
-                >
-                  Notcoin
+              <div className={styles.mt40}>
+                <div>
+                  <span className={joinClassNames(styles.subtitle, styles.textGreen)}>
+                    Notcoin
+                  </span>
                 </div>
                 <div
                   className={joinClassNames(
-                    styles.text,
+                    styles.textXXL,
                     styles.mobileTextCenter,
                     styles.mt10
                   )}
                 >
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
-                    40M+
-                  </span>{" "}
-                  users,{" "}
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
-                    10M+
-                  </span>{" "}
-                  holders, extensive experience in launching over
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
-                    {" "}
-                    150 campaigns
-                  </span>{" "}
+                  <span className={styles.textXXLBold}>40M+</span> Users<br />
+                  <span className={styles.textXXLBold}>10M+</span> Holders<br />
+                  Extensive Experience<br />
+                  in launching over 150 campaigns<br />
                   on TON
                 </div>
               </div>
             </div>
-            <div
-              className={joinClassNames(
-                styles.subtitle,
-                styles.mobileTextCenter
-              )}
-            >
+            <div>
               <Image src="./helika-icon.svg" alt="" width={147} height={134} />
-              <div>
-                <div
-                  className={joinClassNames(
-                    styles.subtitle,
-                    styles.mobileTextCenter
-                  )}
-                >
-                  Helika
+              <div className={styles.mt40}>
+                <div>
+                  <span className={joinClassNames(styles.subtitle, styles.textGreen)}>
+                    Helika
+                  </span>
                 </div>
                 <div
                   className={joinClassNames(
-                    styles.text,
+                    styles.textXXL,
                     styles.mobileTextCenter,
                     styles.mt10
                   )}
                 >
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
-                    15+
-                  </span>{" "}
-                  Years in Web3,
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
-                    {" "}
-                    25
-                  </span>
-                  + Years in Gaming,{" "}
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
-                    10+
-                  </span>{" "}
-                  Years in Venture Funding,{" "}
-                  <span
-                    className={joinClassNames(
-                      styles.textGreen,
-                      styles.textBold
-                    )}
-                  >
-                    250+
-                  </span>{" "}
-                  Global Industry Connections
+                  <span className={styles.textXXLBold}>15+</span> Years in Web 3<br />
+                  <span className={styles.textXXLBold}>25+</span> Years in Gaming<br />
+                  <span className={styles.textXXLBold}>10+</span> Years in Venture Funding<br />
+                  <span className={styles.textXXLBold}>250+</span> Global Industry Connections
                 </div>
               </div>
             </div>
@@ -459,16 +388,16 @@ export default function Home() {
             text="Apply"
             href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
             newTab
-            className={styles.mt50}
+            className={styles.mt122}
           />
         </div>
       </div>
-      <div className={styles.footer}>
-        <div className={styles.footerCaption}>
+      <div className={joinClassNames(styles.container, styles.bottom)}>
+        <div className={joinClassNames(styles.bottomCaption, styles.textGreen)}>
           Lead the next wave
           <br /> of Telegram games
         </div>
-        <div className={styles.footerCenter}>
+        <div className={styles.bottomCenter}>
           <IconLink
             text="Apply"
             size="lg"
