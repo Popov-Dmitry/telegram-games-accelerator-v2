@@ -186,7 +186,7 @@ export default function Home() {
                 )}
               >
                 <div className={styles.subtitle}>Funding Support</div>
-                <div className={styles.text}>
+                <div>
                   <div className={styles.textBold}>TON Ventures and TON Foundation</div>
                   <div className={styles.text}>
                     Each team accepted into the Accelerator is guaranteed to pitch to TON Ventures. TON Foundation will
@@ -302,7 +302,7 @@ export default function Home() {
           <div className={joinClassNames(styles.container, styles.block, styles.blueBox2)}>
             <div className={styles.title}>Who we are looking for?</div>
             <div className={joinClassNames(styles.grid3, styles.gap50, styles.mt50)}>
-              <div className={styles.gridBlock38}>
+              <div className={joinClassNames(styles.gridBlock38, styles.z2)}>
                 <Image src="./fire.svg" alt="" width={63} height={63} />
                 <div>
                   <div className={styles.textXl}>
@@ -434,9 +434,17 @@ export default function Home() {
           <div className={joinClassNames(styles.centeredFlex, styles.gap24)}>
             <div className={styles.centeredFlex}>
               <Image src="/notcoin-logo.svg" alt="" width={24} height={24} />
-              <div className={styles.notcoin}>Notcoin</div>
+              <Link
+                href="https://notco.in"
+                target="_blank"
+                className={styles.notcoinFooter}
+              >
+                Notcoin
+              </Link>
             </div>
-            <Image src="/helika-logo.svg" alt="" width={97} height={20} />
+            <Link href="https://helika.io" target="_blank">
+              <Image src="/helika-logo.svg" alt="" width={97} height={20} />
+            </Link>
           </div>
         </div>
       </footer>
