@@ -142,10 +142,12 @@
 
 .heroBackground {
   background: url("/hero-background.png") repeat-x 0 bottom;
+  overflow-x: hidden;
 }
 
 .pixelBackground {
   background: url("/pixel-background.png") no-repeat 0 35px;
+  overflow-x: hidden;
 }
 
 .blueBox1, .blueBox2 {
