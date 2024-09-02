@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
         <div className={styles.content}>
-          <div className={joinClassNames(styles.block, styles.pb125, styles.heroBackground)}>
+          <div className={joinClassNames(styles.block, styles.pb125, styles.heroBackground, styles.hFull)}>
             <div className={joinClassNames(styles.container, styles.flexCol, styles.gap12)}>
               <div className={styles.centeredFlex}>
                 <div className={styles.centeredFlex}>

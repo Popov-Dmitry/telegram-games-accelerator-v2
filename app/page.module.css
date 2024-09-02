@@ -150,6 +150,10 @@
   overflow-x: hidden;
 }
 
+.hFull {
+  height: calc(100vh - 77px - 110px - 120px);
+}
+
 .blueBox1, .blueBox2 {
   background: linear-gradient(229.54deg, #15E8FF -10.86%, #21AAF2 8.93%, #2D72E6 29.19%, #3546DD 47.99%, #3C26D7 64.74%, #4013D2 78.8%, #410CD1 88.49%);
   border-radius: 10px;
