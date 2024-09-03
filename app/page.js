@@ -35,7 +35,7 @@ export default function Home() {
                 </div>
                 <Image src="/helika-logo.svg" alt="" width={117} height={24} />
               </div>
-              <div className={styles.centeredFlex}>
+              <div className={styles.centeredFlexMobileCol}>
                 <div className={styles.caption}>In Partnership with</div>
                 <Image src="/ton-ventures.png" alt="" width={187} height={28} />
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
               <div className={styles.mx54}>
                 <div className={joinClassNames(styles.title, styles.textCenter)}>Innovative tools</div>
                 <div className={joinClassNames(styles.grid3, styles.gridBlock56, styles.mt74)}>
-                  <div>
+                  <div className={styles.z2}>
                     <div className={styles.subtitle}>Community</div>
                     <div className={joinClassNames(styles.text, styles.mt18)}>
                       Telegram native toolset for easy
@@ -100,23 +100,20 @@ export default function Home() {
                       500+ user-acquisition campaigns.
                     </div>
                   </div>
-                  <div>
+                  <div className={styles.z2}>
                     <div className={styles.subtitle}>Tonstarter</div>
                     <div className={joinClassNames(styles.text, styles.mt18)}>
                       The launchpad platform designed to support projects on The Open Network (TON)
                     </div>
                   </div>
                   <div />
-                  <div>
+                  <div className={styles.z2}>
                     <div className={styles.subtitle}>Early</div>
                     <div className={joinClassNames(styles.text, styles.mt18)}>
                       A tool for win-win collaborations between projects and their early adopters
                     </div>
-                    <div className={styles.bgIcon2}>
-                      <Image src="./icon2.svg" alt="" fill />
-                    </div>
                   </div>
-                  <div>
+                  <div className={styles.z2}>
                     <div className={styles.subtitle}>TokenTable</div>
                     <div className={joinClassNames(styles.text, styles.mt18)}>
                       An on-chain token management platform that allows to conduct token sales, airdrops, vesting and
@@ -173,7 +170,11 @@ export default function Home() {
             className={joinClassNames(styles.block, styles.heroBackground, styles.pb255)}
             id="solutions"
           >
-            <Image className={styles.plane} src="/logo.svg" alt="" width={502} height={358} />
+            <div className={styles.planeContainer}>
+              <div className={styles.plane}>
+                <Image src="/logo.svg" alt="" fill />
+              </div>
+            </div>
             <div className={styles.container}>
               <div className={joinClassNames(styles.title, styles.textGreen, styles.textCenter, styles.mt230)}>
                 What can you expect?
@@ -182,7 +183,7 @@ export default function Home() {
                 className={joinClassNames(
                   styles.grid3,
                   styles.rowGap64,
-                  styles.mt90
+                  styles.mt91
                 )}
               >
                 <div className={styles.subtitle}>Funding Support</div>
@@ -194,14 +195,14 @@ export default function Home() {
                     hosting Q&A sessions for our teams.
                   </div>
                 </div>
-                <div />
+                <div className={styles.mobileNone} />
               </div>
               <div className={joinClassNames(styles.divider, styles.mt70)} />
               <div
                 className={joinClassNames(
                   styles.grid3,
                   styles.rowGap64,
-                  styles.mt90
+                  styles.mt91
                 )}
               >
                 <div className={styles.subtitle}>Go-to-Market</div>
@@ -255,8 +256,8 @@ export default function Home() {
                 )}
               >
                 <div className={styles.subtitle}>
-                  Technical &<br />
-                  Analytical<br />
+                  Technical & <br />
+                  Analytical <br />
                   Support
                 </div>
                 <div className={styles.gridBlock64}>
@@ -300,7 +301,7 @@ export default function Home() {
             </div>
           </div>
           <div className={joinClassNames(styles.container, styles.block, styles.blueBox2)}>
-            <div className={styles.title}>Who we are looking for?</div>
+            <div className={joinClassNames(styles.title, styles.z2)}>Who we are looking for?</div>
             <div className={joinClassNames(styles.grid3, styles.gap50, styles.mt50)}>
               <div className={joinClassNames(styles.gridBlock38, styles.z2)}>
                 <Image src="./fire.svg" alt="" width={63} height={63} />
@@ -362,7 +363,6 @@ export default function Home() {
                   <div
                     className={joinClassNames(
                       styles.textXXL,
-                      styles.mobileTextCenter,
                       styles.mt10
                     )}
                   >
@@ -424,7 +424,7 @@ export default function Home() {
         <div className={joinClassNames(styles.container, styles.footer)}>
           <div className={joinClassNames(styles.centeredFlex, styles.gap10)}>
             <Image src="/logo.svg" alt="" width={28} height={23} />
-            <div className={styles.headerText}>Telegram Gaming</div>
+            <div className={styles.footerText}>Telegram Gaming</div>
           </div>
           <div className={joinClassNames(styles.centeredFlex, styles.gap32)}>
             <Link className={styles.link} href="#tools">Tools</Link>
@@ -442,8 +442,8 @@ export default function Home() {
                 Notcoin
               </Link>
             </div>
-            <Link href="https://helika.io" target="_blank">
-              <Image src="/helika-logo.svg" alt="" width={97} height={20} />
+            <Link className={styles.helikaLogoWrapper} href="https://helika.io" target="_blank">
+              <Image src="/helika-logo.svg" alt="" fill className={styles.helikaLogo} />
             </Link>
           </div>
         </div>

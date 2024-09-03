@@ -14,7 +14,7 @@
   padding: 21px 80px !important;
 }
 
-.headerText {
+.headerText, .footerText {
   font-family: var(--font-paralucent);
   font-size: 15px;
   font-weight: 400;
@@ -56,7 +56,7 @@
 }
 
 .link:hover {
-  color:rgba(0,0,0,0);
+  color: rgba(0,0,0,0);
 }
 
 .content {
@@ -188,7 +188,7 @@
 }
 
 .hFull {
-  height: calc(100vh - 77px - 110px - 120px);
+  min-height: calc(100vh - 77px - 110px - 120px);
 }
 
 .blueBox1, .blueBox2 {
@@ -198,11 +198,11 @@
 }
 
 .blueBox1 {
-  padding: 72px 38px 117px 38px;
+  padding: 72px 38px 117px 38px !important;
 }
 
 .blueBox2 {
-  padding: 78px 84px 81px 84px;
+  padding: 78px 84px 81px 84px !important;
 }
 
 .pixels1 {
@@ -218,10 +218,19 @@
   left: 0;
 }
 
+.planeContainer {
+  position: absolute;
+  width: 502px;
+  height: 358px;
+  align-self: end;
+}
+
 .plane {
   position: absolute;
   top: 0;
   right: -115px;
+  width: 100%;
+  height: 100%;
 }
 
 .z2 {
@@ -298,6 +307,10 @@
   margin-top: 90px;
 }
 
+.mt91 {
+  margin-top: 91px;
+}
+
 .mt100 {
   margin-top: 100px;
 }
@@ -333,6 +346,10 @@
 
 .mAuto {
   margin: auto;
+}
+
+.pt110 {
+  padding-top: 110px;
 }
 
 .grid2 {
@@ -378,6 +395,13 @@
 }
 
 .centeredFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.centeredFlexMobileCol {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -535,18 +559,55 @@
     text-align: center;
 }
 
+.helikaLogoWrapper {
+  position: relative;
+  height: 20px;
+  width: 97px;
+}
+
+.helikaLogo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
 @media (max-width: 767px) {
-  .block {
-    align-items: start;
+  .container {
+    padding: 0 20px;
+  }
+
+  .header, .footer {
+    padding: 21px 20px !important;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .headerText {
-    visibility: hidden;
+    display: none;
+  }
+
+  .telegramGaming {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .accelerator {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .content {
     gap: 100px;
     margin: 90px 0 100px 0;
+  }
+
+  .centeredFlexMobileCol {
+    flex-direction: column;
   }
 
   .name {
@@ -557,13 +618,73 @@
     line-height: 100%;
   }
 
+  .hFull {
+    min-height: calc(100vh - 77px - 110px - 45px);
+  }
+
   .mt20 {
     margin-top: 10px;
   }
 
+  .mt91 {
+    margin-top: 40px;
+  }
+
+  .mt100 {
+    margin-top: 20px;
+  }
+
+  .mt110 {
+    margin-top: 0;
+  }
+
+  .mt122 {
+    margin-top: 50px;
+  }
+
+  .mt144 {
+    margin-top: 60px;
+  }
+
+  .mt230 {
+    margin-top: 100px;
+    z-index: 300;
+    position: relative;
+  }
+
+  .pb125 {
+    padding-bottom: 70px;
+  }
+
+  .pb255 {
+    padding-bottom: 100px;
+  }
+
+  .blueBox1 {
+    padding: 42px 0 117px 0 !important;
+  }
+
+  .blueBox2 {
+    padding: 78px 30px 81px 30px !important;
+  }
+
+  .planeContainer {
+    width: 202px;
+    height: 158px;
+  }
+
+  .plane {
+    right: -30px;
+    opacity: .7;
+  }
+
+  .gridBlock64 {
+    gap: 32px;
+  }
+
   .title {
-    font-size: 56px;
-    line-height: 67px;
+    font-size: 36px;
+    line-height: 47px;
     align-self: start;
   }
 
@@ -574,6 +695,15 @@
     line-height: 22px;
     margin-top: 10px;
     text-align: left;
+  }
+
+  .textXXL, .textXXLBold {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .colGap20 {
+    justify-items: initial;
   }
 
   .grid2, .grid3 {
@@ -591,8 +721,12 @@
   }
 
   .subtitle {
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 28px;
+    line-height: 24px;
+  }
+
+  .subtitle > br {
+    display: none;
   }
 
   .text {
@@ -616,6 +750,10 @@
 
   .mAuto {
     margin-top: 50px;
+  }
+
+  .gap32 {
+    gap: 16px;
   }
 
   .mobileNone {
@@ -678,8 +816,8 @@
   }
 
   .bottomCaption {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 34px;
+    line-height: 46px;
   }
 
   .bottomCaption br {
@@ -692,5 +830,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+
+  .footerText {
+    font-size: 14px;
   }
 }

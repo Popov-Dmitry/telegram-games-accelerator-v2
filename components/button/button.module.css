@@ -84,7 +84,13 @@
 }
 
 @media (max-width: 767px) {
-    .button {
-        padding: 3px 40px;
+    .lg {
+        padding: 0 34px;
+        font-size: 16px;
+    }
+
+    .sm {
+        padding: 0 22px;
+        font-size: 12px;
     }
 }
