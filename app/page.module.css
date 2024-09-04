@@ -76,6 +76,12 @@
   position: relative;
 }
 
+.tonVenturesLogoWrapper {
+  position: relative;
+  height: 28px;
+  width: 187px;
+}
+
 .logoWrapper {
   position: relative;
   height: 78px;
@@ -195,6 +201,7 @@
 
 .hFull {
   min-height: calc(100vh - 77px - 110px - 120px);
+  justify-content: center;
 }
 
 .blueBox1, .blueBox2 {
@@ -415,7 +422,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 14px;
 }
 
 .flex {
@@ -434,6 +441,10 @@
 
 .gap12 {
   gap: 12px;
+}
+
+.gap13 {
+  gap: 13px;
 }
 
 .gap24 {
@@ -601,6 +612,12 @@
     display: none;
   }
 
+  .tonVenturesLogoWrapper {
+    position: relative;
+    height: 22px;
+    width: 167px;
+  }
+
   .logoWrapper {
     position: relative;
     height: 60px;
@@ -682,6 +699,10 @@
 
   .pb255 {
     padding-bottom: 100px;
+  }
+
+  .gap13 {
+    gap: 0;
   }
 
   .blueBox1 {

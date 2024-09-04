@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         <div className={styles.content}>
           <div className={joinClassNames(styles.block, styles.pb125, styles.heroBackground, styles.hFull)}>
-            <div className={joinClassNames(styles.container, styles.flexCol, styles.gap12)}>
+            <div className={joinClassNames(styles.container, styles.flexCol, styles.gap13)}>
               <div className={styles.centeredFlex}>
                 <div className={styles.centeredFlex}>
                   <Image src="/notcoin-logo.svg" alt="" width={28} height={28} />
@@ -37,10 +37,12 @@ export default function Home() {
               </div>
               <div className={styles.centeredFlexMobileCol}>
                 <div className={styles.caption}>In Partnership with</div>
-                <Image src="/ton-ventures.png" alt="" width={187} height={28} />
+                <div className={styles.tonVenturesLogoWrapper}>
+                  <Image src="/ton-ventures.png" alt="" fill />
+                </div>
               </div>
             </div>
-            <div className={joinClassNames(styles.container, styles.centeredFlex, styles.gap12, styles.mt75)}>
+            <div className={joinClassNames(styles.container, styles.centeredFlex, styles.gap12, styles.mt74)}>
               <div className={styles.logoWrapper}>
                 <Image src="/logo.svg" alt="" fill />
               </div>
