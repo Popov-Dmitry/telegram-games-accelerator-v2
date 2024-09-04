@@ -9,21 +9,23 @@ export default function Home() {
   return (
     <>
       <main>
-        <div className={joinClassNames(styles.container, styles.header)}>
-          <div className={joinClassNames(styles.centeredFlex, styles.gap10)}>
-            <Image src="/logo.svg" alt="" width={28} height={23} />
-            <div className={styles.headerText}>Telegram Gaming</div>
+        <div className={styles.headerWrapper}>
+          <div className={joinClassNames(styles.container, styles.header)}>
+            <div className={joinClassNames(styles.centeredFlex, styles.gap10)}>
+              <Image src="/logo.svg" alt="" width={28} height={23} />
+              <div className={styles.headerText}>Telegram Gaming</div>
+            </div>
+            <div className={joinClassNames(styles.centeredFlex, styles.gap32)}>
+              <Link className={styles.link} href="#tools">Tools</Link>
+              <Link className={styles.link} href="#solutions">Solutions</Link>
+              <Link className={styles.link} href="#partners">Partners</Link>
+            </div>
+            <Button
+              text="apply"
+              size="sm"
+              href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
+            />
           </div>
-          <div className={joinClassNames(styles.centeredFlex, styles.gap32)}>
-            <Link className={styles.link} href="#tools">Tools</Link>
-            <Link className={styles.link} href="#solutions">Solutions</Link>
-            <Link className={styles.link} href="#partners">Partners</Link>
-          </div>
-          <Button
-            text="apply"
-            size="sm"
-            href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-          />
         </div>
         <div className={styles.content}>
           <div className={joinClassNames(styles.block, styles.pb125, styles.heroBackground, styles.hFull)}>
@@ -180,7 +182,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.container}>
-              <div className={joinClassNames(styles.title, styles.textGreen, styles.textCenter, styles.mt230)}>
+              <div className={joinClassNames(styles.title, styles.textGreen, styles.textCenter, styles.mt230, styles.mobileTextLeft)}>
                 What can you expect?
               </div>
               <div

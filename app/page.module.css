@@ -7,6 +7,28 @@
   box-sizing: border-box;
 }
 
+.headerWrapper, .footerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerWrapper {
+    border-bottom: 1px solid #FFFFFF26;
+}
+
+.footerWrapper {
+    border-top: 1px solid #FFFFFF26;
+}
+
+.footerText {
+    font-family: var(--font-inter);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+}
+
 .header, .footer {
   display: flex;
   justify-content: space-between;
@@ -565,21 +587,6 @@
   display: none;
 }
 
-.footerWrapper {
-  border-top: 1px solid #FFFFFF26;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.footerText {
-    font-family: var(--font-inter);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 25px;
-    text-align: center;
-}
-
 .helikaLogoWrapper {
   position: relative;
   height: 20px;
@@ -811,6 +818,10 @@
 
   .mobileTextCenter {
     text-align: center;
+  }
+
+  .mobileTextLeft {
+    text-align: left;
   }
 
   .gridLargeBlock {
