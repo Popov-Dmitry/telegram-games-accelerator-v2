@@ -40,8 +40,10 @@ export default function Home() {
                 <Image src="/ton-ventures.png" alt="" width={187} height={28} />
               </div>
             </div>
-            <div className={joinClassNames(styles.container, styles.centeredFlex, styles.gap12, styles.mt74)}>
-              <Image src="/logo.svg" alt="" width={100} height={78} />
+            <div className={joinClassNames(styles.container, styles.centeredFlex, styles.gap12, styles.mt75)}>
+              <div className={styles.logoWrapper}>
+                <Image src="/logo.svg" alt="" fill />
+              </div>
               <div>
                 <div className={styles.telegramGaming}>Telegram Gaming</div>
                 <div className={styles.accelerator}>ACCELERATOR</div>
@@ -60,25 +62,25 @@ export default function Home() {
           </div>
           <div className={joinClassNames(styles.block, styles.pixelBackground, styles.mt110)}>
             <div className={joinClassNames(styles.container, styles.grid3, styles.colGap48, styles.centeredGridBlock)}>
-              <div>
+              <div className={styles.mobileTextCenter}>
                 <Image src="/telegram.svg" alt="" width={36} height={36} />
-                <div className={styles.caption}>
+                <div className={joinClassNames(styles.caption, styles.mobileTextCenter)}>
                   Help you scale your<br />
                   unique game<br />
                   to Telegram’s massive<br />
                   audiences
                 </div>
               </div>
-              <div>
+              <div className={styles.mobileTextCenter}>
                 <Image src="/gear-outline.svg" alt="" width={36} height={36} />
-                <div className={styles.caption}>
+                <div className={joinClassNames(styles.caption, styles.mobileTextCenter)}>
                   Technical and<br />
                   analytical expertise
                 </div>
               </div>
-              <div>
+              <div className={styles.mobileTextCenter}>
                 <Image src="/megaphone.svg" alt="" width={36} height={36} />
-                <div className={styles.caption}>
+                <div className={joinClassNames(styles.caption, styles.mobileTextCenter)}>
                   Providing go-to-market<br />
                   strategy, user<br />
                   acquisition solutions
@@ -385,7 +387,6 @@ export default function Home() {
                   <div
                     className={joinClassNames(
                       styles.textXXL,
-                      styles.mobileTextCenter,
                       styles.mt10
                     )}
                   >

@@ -76,6 +76,12 @@
   position: relative;
 }
 
+.logoWrapper {
+  position: relative;
+  height: 78px;
+  width: 100px;
+}
+
 .notcoin {
   font-family: var(--font-inter);
   font-size: 23px;
@@ -297,6 +303,10 @@
 
 .mt74 {
   margin-top: 74px;
+}
+
+.mt75 {
+  margin-top: 75px;
 }
 
 .mt83 {
@@ -591,6 +601,12 @@
     display: none;
   }
 
+  .logoWrapper {
+    position: relative;
+    height: 60px;
+    width: 60px;
+  }
+
   .telegramGaming {
     font-size: 28px;
     line-height: 38px;
@@ -626,6 +642,10 @@
     margin-top: 10px;
   }
 
+  .mt75 {
+    margin-top: 22px;
+  }
+
   .mt91 {
     margin-top: 40px;
   }
@@ -652,6 +672,10 @@
     position: relative;
   }
 
+  .mx54 {
+    margin: 0;
+  }
+
   .pb125 {
     padding-bottom: 70px;
   }
@@ -661,11 +685,11 @@
   }
 
   .blueBox1 {
-    padding: 42px 0 117px 0 !important;
+    padding: 42px 20px 117px 20px !important;
   }
 
   .blueBox2 {
-    padding: 78px 30px 81px 30px !important;
+    padding: 78px 20px 81px 20px !important;
   }
 
   .planeContainer {
@@ -765,7 +789,7 @@
   }
 
   .mobileTextCenter {
-    text-align: left;
+    text-align: center;
   }
 
   .gridLargeBlock {
