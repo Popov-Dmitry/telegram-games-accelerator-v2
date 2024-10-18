@@ -87,7 +87,7 @@
   align-items: center;
   width: 100%;
   gap: 130px;
-  margin: 110px 0 140px 0;
+  margin: 110px 0 190px 0;
 }
 
 .block {
@@ -389,6 +389,13 @@
 
 .pt110 {
   padding-top: 110px;
+}
+
+.flexRow {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 75px;
 }
 
 .grid2 {
@@ -890,5 +897,13 @@
 
   .footerText {
     font-size: 14px;
+  }
+
+  .flexRow {
+    margin-top: 56px;
+    gap: 48px;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 100%;
   }
 }
