@@ -4,6 +4,7 @@ import IconLink from "@/components/icon-link/IconLink";
 import Button from "@/components/button/Button";
 import { joinClassNames } from "@/utils/join-class-names";
 import Link from "next/link";
+import Sns from "@/components/sns/Sns";
 
 export default function Home() {
   return (
@@ -26,11 +27,14 @@ export default function Home() {
                 Partners
               </Link>
             </div>
-            <Button
-              text="apply"
-              size="sm"
-              href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
-            />
+            <div className={joinClassNames(styles.centeredFlex, styles.gap24)}>
+              <Sns />
+              <Button
+                text="apply"
+                size="sm"
+                href="https://airtable.com/appXnUdjNS7Fzxpq7/pagWSQDZwdqEVDv01/form"
+              />
+            </div>
           </div>
         </div>
         <div className={styles.content}>
@@ -668,6 +672,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <Sns style={styles.footerSns} />
       </footer>
     </>
   );
