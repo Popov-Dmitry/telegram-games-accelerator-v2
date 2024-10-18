@@ -20,6 +20,7 @@
 .footerWrapper {
     border-top: 1px solid #FFFFFF26;
     flex-direction: column;
+    align-items: center;
 }
 
 .footerText {
@@ -32,6 +33,7 @@
 
 .footerSns {
   padding: 0 80px 21px 118px;
+  align-self: start;
 }
 
 .header, .footer {
@@ -43,6 +45,7 @@
 
 .footer {
   padding: 21px 80px 6px 80px !important;
+  width: initial;
 }
 
 .headerText, .footerText {
@@ -629,6 +632,10 @@
   .footer {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .footerSns {
+    justify-content: center;
   }
 
   .headerText {

@@ -631,48 +631,50 @@ export default function Home() {
         </div>
       </main>
       <footer className={joinClassNames(styles.footerWrapper)}>
-        <div className={joinClassNames(styles.container, styles.footer)}>
-          <div className={joinClassNames(styles.centeredFlex, styles.gap10)}>
-            <Image src="/logo.svg" alt="" width={28} height={23} />
-            <div className={styles.footerText}>Telegram Gaming</div>
-          </div>
-          <div className={joinClassNames(styles.centeredFlex, styles.gap32)}>
-            <Link className={styles.link} href="#tools">
-              Tools
-            </Link>
-            <Link className={styles.link} href="#solutions">
-              Solutions
-            </Link>
-            <Link className={styles.link} href="#partners">
-              Partners
-            </Link>
-          </div>
-          <div className={joinClassNames(styles.centeredFlex, styles.gap24)}>
-            <div className={styles.centeredFlex}>
-              <Image src="/notcoin-logo.svg" alt="" width={24} height={24} />
-              <Link
-                href="https://notco.in"
-                target="_blank"
-                className={styles.notcoinFooter}
-              >
-                Notcoin
+        <div className={joinClassNames(styles.container)}>
+          <div className={styles.footer}>
+            <div className={joinClassNames(styles.centeredFlex, styles.gap10)}>
+              <Image src="/logo.svg" alt="" width={28} height={23} />
+              <div className={styles.footerText}>Telegram Gaming</div>
+            </div>
+            <div className={joinClassNames(styles.centeredFlex, styles.gap32)}>
+              <Link className={styles.link} href="#tools">
+                Tools
+              </Link>
+              <Link className={styles.link} href="#solutions">
+                Solutions
+              </Link>
+              <Link className={styles.link} href="#partners">
+                Partners
               </Link>
             </div>
-            <Link
-              className={styles.helikaLogoWrapper}
-              href="https://helika.io"
-              target="_blank"
-            >
-              <Image
-                src="/helika-logo.svg"
-                alt=""
-                fill
-                className={styles.helikaLogo}
-              />
-            </Link>
+            <div className={joinClassNames(styles.centeredFlex, styles.gap24)}>
+              <div className={styles.centeredFlex}>
+                <Image src="/notcoin-logo.svg" alt="" width={24} height={24} />
+                <Link
+                  href="https://notco.in"
+                  target="_blank"
+                  className={styles.notcoinFooter}
+                >
+                  Notcoin
+                </Link>
+              </div>
+              <Link
+                className={styles.helikaLogoWrapper}
+                href="https://helika.io"
+                target="_blank"
+              >
+                <Image
+                  src="/helika-logo.svg"
+                  alt=""
+                  fill
+                  className={styles.helikaLogo}
+                />
+              </Link>
+            </div>
           </div>
+          <Sns style={styles.footerSns} />
         </div>
-        <Sns style={styles.footerSns} />
       </footer>
     </>
   );
